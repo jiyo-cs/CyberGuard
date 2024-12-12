@@ -8,14 +8,6 @@
     <title>CyberGaurd solution</title>
 </head>
 <body>
-    <script>
-        document.body.addEventListener("pointermove", (e) => {
-            const { currentTarget: el, clientX: x, clientY: y } = e;
-            const { top: t, left: l, width: w, height: h } = el.getBoundingClientRect();
-            el.style.setProperty('--posX', x - l - w / 2);
-            el.style.setProperty('--posY', y - t - h / 2);
-        });
-    </script>      
     <header>
         <a href="#" class="logo">cybergaurd solution</a>
         <nav>
@@ -53,7 +45,7 @@
             </ul>
         </nav>
     </header>
-    <section class="main">
+    <section class="main">  
         <a href="#project" class="schedule-call1">Schedule Call</a>
         <div>
             <h1 class="styled-text">
@@ -66,10 +58,12 @@
             <h3>Our Clients love to work with us</h3>
             <a href="#projects" class="schedule-call2">Schedule Call</a>
             <div class="social-icons">
-                <a href="https://www.facebook.com/share/14bqh3W8Zg/?mibextid=LQQJ4d"><i class="fa-brands fa-facebook"></i></a>
-                <a href="#"><i class="fa-solid fa-file-word"></i></a>
-                <a href="https://1drv.ms/p/c/8fc8c3258cc5ddad/EdnMMpsiOJdOi3gYroDTf00BhAQ
-                RKfwP2fbRP09l8fFdSg"><i class="fa-solid fa-file-powerpoint"></i></a>
+                <a href="https://www.facebook.com/share/14bqh3W8Zg/?mibextid=LQQJ4d">
+                    <i class="fa-brands fa-facebook"></i></a>
+                <a href="https://1drv.ms/w/c/8fc8c3258cc5ddad/EWbnVmylPWpAiA-lLMpncGsBRrq8SdFJ7Ggbs60e5M3Oew?e=ssXELh">
+                    <i class="fa-solid fa-file-word"></i></a>
+                <a href="https://1drv.ms/p/c/8fc8c3258cc5ddad/EdnMMpsiOJdOi3gYroDTf00BhAQRKfwP2fbRP09l8fFdSg?e=qaDwaP">
+                    <i class="fa-solid fa-file-powerpoint"></i></a>
                 <a href="https://youtu.be/iik25wqIuFo?si=9Z-CxljVyfnuoxbo"><i class="fa-brands fa-youtube"></i></a>
             </div>
         </div>
@@ -345,6 +339,12 @@
           <p>&copy; 2024 Cyber Guard . All Rights Reserved.</p>
         </div>
       </footer>
-      
+      <script>
+        document.body.addEventListener("pointermove", (e) => {
+            const { clientX: x, clientY: y } = e;
+            document.body.style.setProperty('--posX', x / window.innerWidth);
+            document.body.style.setProperty('--posY', y / window.innerHeight);
+        });
+      </script>  
 </body>
 </html>
