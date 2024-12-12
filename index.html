@@ -8,6 +8,13 @@
     <title>CyberGaurd solution</title>
 </head>
 <body>
+    <script>
+        document.body.addEventListener("pointermove", (e) => {
+            const { clientX: x, clientY: y } = e;
+            document.body.style.setProperty('--posX', x / window.innerWidth);
+            document.body.style.setProperty('--posY', y / window.innerHeight);
+        });
+      </script>
     <header>
         <a href="#" class="logo">cybergaurd solution</a>
         <nav>
@@ -339,12 +346,5 @@
           <p>&copy; 2024 Cyber Guard . All Rights Reserved.</p>
         </div>
       </footer>
-      <script>
-        document.body.addEventListener("pointermove", (e) => {
-            const { clientX: x, clientY: y } = e;
-            document.body.style.setProperty('--posX', x / window.innerWidth);
-            document.body.style.setProperty('--posY', y / window.innerHeight);
-        });
-      </script>  
 </body>
 </html>
