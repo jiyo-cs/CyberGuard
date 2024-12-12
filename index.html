@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>CyberGaurd solution</title>
+</head>
+<body>
+    <script>
+        document.body.addEventListener("pointermove", (e) => {
+            const { currentTarget: el, clientX: x, clientY: y } = e;
+            const { top: t, left: l, width: w, height: h } = el.getBoundingClientRect();
+            el.style.setProperty('--posX', x - l - w / 2);
+            el.style.setProperty('--posY', y - t - h / 2);
+        });
+    </script>      
+    <header>
+        <a href="#" class="logo">cybergaurd solution</a>
+        <nav>
+            <ul class="menu">
+              <li class="menu-item">
+                <a href="#work">Work</a>
+              </li>
+              <li class="menu-item dropdown">
+                <a href="#service">Services ▼</a>
+                <div class="dropdown-menu">
+                  <a href="https://youtu.be/sfQdP7WUVYQ?si=bFr5MUUBTna4Bkbk">Risk Analysis and Assessment</a>
+                  <a href="https://youtu.be/9GZlVOafYTg?si=XkJc5MZZanuPimH1">Firewall and Antivirus Protection</a>
+                  <a href="https://youtu.be/ftdIrCy7jPU?si=KYVBtV_U3Xqc1jLk">Security Awareness Training</a>
+                  <a href="https://youtu.be/Z3CGy2dYVJo?si=IFaodK9zhR7XQaS4">Incident Response and Recovery</a>
+                </div>
+              </li>
+              <li class="menu-item dropdown">
+                <a href="#technology">Technology and Tools ▼</a>
+                <div class="dropdown-menu">
+                  <a href="#defense">Defence</a>
+                  <a href="#attack">Attack</a>
+                </div>
+              </li>
+              <li class="menu-item">
+                <a href="#why-choose-us">Why Choose Us?</a>
+              </li>
+              <li class="menu-item dropdown">
+                <a href="#contact">Contact ▼</a>
+                <div class="dropdown-menu">
+                  <a href="#contact">Email</a>
+                  <a href="#contact">Phone</a>
+                  <a href="#contact">Message</a>
+                </div>
+              </li>
+            </ul>
+        </nav>
+    </header>
+    <section class="main">
+        <a href="#project" class="schedule-call1">Schedule Call</a>
+        <div>
+            <h1 class="styled-text">
+                <span>Protecting Your + </span>
+                <br />
+                <span class="highlight">Data,<span class="box">Securing</span></span>
+                <br />
+                <span>Your Future</span>
+            </h1>
+            <h3>Our Clients love to work with us</h3>
+            <a href="#projects" class="schedule-call2">Schedule Call</a>
+            <div class="social-icons">
+                <a href="https://www.facebook.com/share/14bqh3W8Zg/?mibextid=LQQJ4d"><i class="fa-brands fa-facebook"></i></a>
+                <a href="#"><i class="fa-solid fa-file-word"></i></a>
+                <a href="https://1drv.ms/p/c/8fc8c3258cc5ddad/EdnMMpsiOJdOi3gYroDTf00BhAQ
+                RKfwP2fbRP09l8fFdSg"><i class="fa-solid fa-file-powerpoint"></i></a>
+                <a href="https://youtu.be/iik25wqIuFo?si=9Z-CxljVyfnuoxbo"><i class="fa-brands fa-youtube"></i></a>
+            </div>
+        </div>
+    </section>    
+    <section class="cards1" id="defense">
+        <h2 class="title1">Defence Strategies We Implement</h2>
+        <div class="content">
+            <div class="card1">
+                <div class="icon1">
+                    <i class="fa-solid fa-sitemap"></i>
+                </div>
+                <div class="info1">
+                    <h3>Data Encryption</h3>
+                    <p>Ensuring your information is secure during storage and transmission.</p>
+                </div>
+            </div>
+            <div class="card1">
+                <div class="icon1">
+                    <i class="fa-solid fa-user-shield"></i>
+                </div>
+                <div class="info1">
+                    <h3>(IDS/IPS)</h3>
+                    <p>Identify and stopping threats before they escalate.</p>
+                </div>
+            </div>
+            <div class="card1">
+                <div class="icon1">
+                    <i class="fa-solid fa-hand"></i>
+                </div>
+                <div class="info1">
+                    <h3>Firewall</h3>
+                    <p>Blocking unauthorized access to your network.</p>
+                </div>
+            </div>
+            <div class="card1">
+                <div class="icon1">
+                    <i class="fa-solid fa-people-group"></i>
+                </div>
+                <div class="info1">
+                    <h3>Employee training</h3>
+                    <p>Empowering your team to recognize risks and follow best security practices.</p>
+                </div>
+            </div>
+            <div class="card1">
+                <div class="icon1">
+                    <i class="fa-solid fa-chart-line"></i>
+                </div>
+                <div class="info1">
+                    <h3>Big data analytics</h3>
+                    <p>Analyzing patterns to predict and prevent threats.</p>
+                </div>
+            </div>
+      </div>
+    </section>
+    <hr class="divider">
+    <section class="cards2" id="attack">
+      <h2 class="title2">Attack Strategies We Implement</h2>
+      <div class="content">
+          <div class="card2">
+              <div class="icon2">
+                  <i class="fas fa-shield-alt"></i>
+              </div>
+              <div class="info2">
+                  <h3>Penetration Testing</h3>
+                  <p>Simulating external and internal attacks to test the strength of your security systems.
+                    Using advanced techniques to mimic tactics used by hackers, such as phishing, brute force, and SQL injection.
+                    Providing detailed reports on discovered vulnerabilities and actionable recommendations to fix them.</p>
+              </div>
+          </div>
+          <div class="card2">
+              <div class="icon2">
+                  <i class="fas fa-users-cog"></i>
+              </div>
+              <div class="info2">
+                  <h3>Read Team assessments</h3>
+                  <p>IDeploying a dedicated team of cybersecurity experts to act as adversaries, testing your organization's ability to detect and respond to attacks.
+                    Simulating multi-vector attacks, such as blending social engineering with network exploitation.</p>
+              </div>
+          </div>
+          <div class="card2">
+              <div class="icon2">
+                  <i class="fas fa-brain"></i>
+              </div>
+              <div class="info2">
+                  <h3>Social Engineering Campaigns</h3>
+                  <p>Testing employee awareness by simulating phishing emails, baiting attacks, or fake customer service calls.
+                    Analyzing employee behavior to identify gaps in awareness and training needs.</p>
+              </div>
+          </div>
+          <div class="card2">
+              <div class="icon2">
+                  <i class="fas fa-search"></i>
+              </div>
+              <div class="info2">
+                  <h3>Threat Hunting Simulations</h3>
+                  <p>Proactively searching for hidden threats within your network by mimicking advanced persistent threats (APTs).
+                    Utilizing data analysis, log reviews, and behavior analytics to detect stealthy adversaries.</p>
+              </div>
+          </div>
+          <div class="card2">
+              <div class="icon2">
+                  <i class="fas fa-bug"></i>
+              </div>
+              <div class="info2">
+                  <h3>Zero-Day Exploit Simulations</h3>
+                  <p>Evaluating how well your system can handle unknown vulnerabilities by replicating zero-day attack scenarios.
+                    Assessing your organization's response times and contingency measures.</p>
+              </div>
+          </div>
+     </div>
+    </section>
+    <section class="service" id="service">
+        <h2 class="title1">Services</h2>
+        <div class="content">
+            <div class="service-card">
+                <div class="service-image">
+                    <img src="images/risk-analysis.jpg" />
+                </div>
+                <div class="service-info">
+                    <p class="service-category">Risk Analysis And Assessment.</p>
+                    <strong class="service-title">
+                        <span>Risk Assessment</span>
+                        <a href="https://youtu.be/sfQdP7WUVYQ?si=bFr5MUUBTna4Bkbk" class="more-details">More Details</details></a>
+                    </strong>
+                </div>
+            </div>
+            <div class="service-card">
+                <div class="service-image">
+                    <img src="images/firewall.jpg" />
+                </div>
+                <div class="service-info">
+                    <p class="service-category">Firewall And Antivirus Protection.</p>
+                    <strong class="service-title">
+                        <span>Firewall</span>
+                        <a href="https://youtu.be/9GZlVOafYTg?si=XkJc5MZZanuPimH1" class="more-details">More Details</details></a>
+                    </strong>
+                </div>
+            </div>
+            <div class="service-card">
+                <div class="service-image">
+                    <img src="images/security-awareness.jpg" />
+                </div>
+                <div class="service-info">
+                    <p class="service-category">Security Awareness Training.</p>
+                    <strong class="service-title">
+                        <span>Security Awareness</span>
+                        <a href="https://youtu.be/ftdIrCy7jPU?si=KYVBtV_U3Xqc1jLk" class="more-details">More Details</details></a>
+                    </strong>
+                </div>
+            </div>
+            <div class="service-card">
+                <div class="service-image">
+                    <img src="images/incident-response.jpg" />
+                </div>
+                <div class="service-info">
+                    <p class="service-category">Incident Response And Recovery.</p>
+                    <strong class="service-title">
+                        <span>Incident Response</span>
+                        <a href="https://youtu.be/Z3CGy2dYVJo?si=IFaodK9zhR7XQaS4" class="more-details">More Details</details></a>
+                    </strong>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="custom-section" id="why-choose-us">
+        <div class="containers">
+          <div class="contents">
+            <h2>Professionals + knowledge + Skilled</h2>
+            <h1>Delivering exceptional value to our clients</h1>
+            <a href="#" class="schedule-btn">Schedule a Call</a>
+          </div>
+          <div class="features-grid">
+            <div class="feature">
+              <div class="icon">
+                <i class="fas fa-lightbulb"></i>
+              </div>
+              <h3>EXPERT TEAM</h3>
+              <p>Our team comprises highly skilled professionals who have spent years mastering the art of cybersecurity. With certifications such as CISSP, CEH, and OSCP, our experts bring a wealth of knowledge and real-world experience to the table.
+              </p>
+            </div>
+            <div class="feature">
+              <div class="icon">
+                <i class="fas fa-handshake"></i>
+              </div>
+              <h3>SPECIALIZED EXPERTISE</h3>
+              <p>Our focus on cybersecurity means we don’t spread ourselves thin. We specialize in protecting businesses from digital threats.
+              </p>
+            </div>
+            <div class="feature">
+              <div class="icon">
+                <i class="fas fa-users"></i>
+              </div>
+              <h3>CUSTOM SOLUTIONS</h3>
+              <p>We understand that every business has its own unique requirements and constraints.
+              </p>
+            </div>
+            <div class="feature">
+              <div class="icon">
+                <i class="fas fa-comments"></i>
+              </div>
+              <h3>COMPETITIVE PRICING</h3>
+              <p>High-quality cybersecurity doesn’t have to break the bank.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="testimonial-section" id="work">
+        <div class="testimonial-container">
+          <div class="testimonial">
+            <div class="text">
+              <blockquote>By preventing a major ransomware attack, Sonatrach avoided an estimated $50,000 in potential losses. This was achieved through our proactive risk analysis and the implementation of advanced endpoint detection systems.
+              </blockquote>
+              <p class="author">SONATRACH</p>
+              <div class="company-logo">
+                <img src="images/Sonatrach.svg.png">
+              </div>
+            </div>
+          </div>
+          <div class="testimonial reverse">
+            <div class="text">
+              <blockquote>Our team secured the sensitive customer data of algerie telecom, reinforcing the trust of their retail clients. Through our firewall optimization and real-time monitoring services, the company successfully boosted client confidence while avoiding reputational damage.
+              </blockquote>
+              <p class="author">ALGERIE TELECOM</p>
+              <div class="company-logo">
+                <img src="images/Logo_Algérie_Télécom.svg.png">
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="get-started-section">
+        <div class="content">
+          <h2>Ready to Get Started?</h2>
+          <a href="#contact" class="cta-button">Schedule a Call</a>
+        </div>
+      </section>
+      <footer class="footer" id="contact">
+        <div class="footer-container">
+          <div class="footer-logo">
+            <h3>cyber <span>guard</span></h3>
+            <p>Our Clients love to work with us</p>
+          </div>
+          <div class="footer-links">
+            <div class="column">
+              <h4>Services</h4>
+              <ul>
+                <li><a href="https://youtu.be/sfQdP7WUVYQ?si=bFr5MUUBTna4Bkbk">Risk Analysis And Assessment</a></li>
+                <li><a href="https://youtu.be/9GZlVOafYTg?si=XkJc5MZZanuPimH1">Firewall And Antivirus Protection</a></li>
+                <li><a href="https://youtu.be/ftdIrCy7jPU?si=KYVBtV_U3Xqc1jLk">Security Awareness Training</a></li>
+                <li><a href="https://youtu.be/Z3CGy2dYVJo?si=IFaodK9zhR7XQaS4">Incident Response And Recovery</a></li>
+              </ul>
+            </div>
+            <div class="column">
+              <h4>Technology And Tools</h4>
+              <ul>
+                <li><a href="#defense">Defense</a></li>
+                <li><a href="#attack">Attack</a></li>
+              </ul>
+            </div>
+            <div class="column">
+              <h4>Company</h4>
+              <ul>
+                <li><a href="#">About</a></li>
+                <li><a href="#why-choose-us">Why Choose US?</a></li>
+                <li><a href="#service">Service</a></li>
+                <li><a href="#contact">Contact</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>&copy; 2024 Cyber Guard . All Rights Reserved.</p>
+        </div>
+      </footer>
+      
+</body>
+</html>
