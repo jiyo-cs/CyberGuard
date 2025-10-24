@@ -7,6 +7,11 @@
     <link rel="stylesheet" href="style.css">
     <title>CyberGaurd solution</title>
 </head>
+<script>
+  document.querySelector('.mobile-menu-btn').addEventListener('click', function() {
+    document.querySelector('nav').classList.toggle('active');
+});
+</script>
 <body>
     <script>
         document.body.addEventListener("pointermove", (e) => {
@@ -16,6 +21,7 @@
         });
       </script>
     <header>
+      <button class="mobile-menu-btn">☰</button>
         <a href="#" class="logo">cybergaurd solution</a>
         <nav>
             <ul class="menu">

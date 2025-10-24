@@ -12,9 +12,9 @@ header {
     position: fixed;
     z-index: 999;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
-    padding: 10px 100px ;
+    padding: 10px 0 ;
 }
 .logo {
     text-decoration: none;
@@ -521,52 +521,122 @@ section {
   font-size: 0.875rem;
   color: #888;
 }
+/* حل نهائي للهواتف */
 @media (max-width: 1023px) {
-  header {
-    padding: 12px 20px;
-  }
-  .navigation a{
-    padding-left: 10px;
-  }
-  .title {
-    font-size: 1.8em;
-  }
-  section {
-    padding: 80px 20px;
-  }
-  .main-content {
-    font-size: 1em;
-  }
-  .main-contant h3{
-    font-size: 1.6em;
-  }
-  .content {
-    flex-direction: column;
-    align-items: center;
-  }
-  .menu {
-    padding: 3px;
-  }
-  .menu a{
-    padding-left: 5px;
-  }
-  .logo {
-    font-size: 0.2em;
-  }
+    header {
+        display: flex !important;
+        flex-wrap: wrap !important;
+        padding: 10px 15px !important;
+        gap: 10px !important;
+    }
+
+    .logo {
+        order: 1 !important;
+        font-size: 1.2em !important;
+        flex: 1 !important;
+    }
+
+    .schedule-call1 {
+        order: 2 !important;
+        position: static !important;
+        font-size: 0.8em !important;
+        padding: 8px 12px !important;
+        margin: 0 !important;
+    }
+
+    /* إخفاء القائمة الأصلية */
+    nav {
+        order: 3 !important;
+        width: 100% !important;
+        display: none !important;
+    }
+
+    nav.active {
+        display: block !important;
+    }
+
+    .menu {
+        flex-direction: column !important;
+        gap: 0 !important;
+        background: white !important;
+        border-radius: 8px !important;
+        padding: 10px 0 !important;
+    }
+
+    .menu-item {
+        width: 100% !important;
+        text-align: center !important;
+    }
+
+    .menu a {
+        display: block !important;
+        padding: 12px !important;
+        border-bottom: 1px solid #eee !important;
+    }
+
+    /* زر القائمة */
+    .mobile-menu-btn {
+        display: block !important;
+        order: 0 !important;
+        background: none !important;
+        border: none !important;
+        font-size: 20px !important;
+        color: #DA1D61ff !important;
+        cursor: pointer !important;
+    }
 }
+
 @media (max-width: 641px) {
-  body {
-    font-size: 12px;
-  }
-  .main-content h2{
-    font-size: 0.8em;
-  }
-  .main-content h3{
-    font-size: 1.4em;
-  }
+    header {
+        padding: 8px 10px !important;
+    }
+    
+    .logo {
+        font-size: 1.1em !important;
+    }
+    
+    .schedule-call1 {
+        font-size: 0.7em !important;
+        padding: 6px 10px !important;
+    }
 }
-@media (max-width: 300px){
-  body {
-    font-size: 10px;
-  }
+
+@media (max-width: 641px) {
+    body {
+      font-size: 14px;
+    }
+
+    .main-content h2 {
+      font-size: 1.2em;
+    }
+
+    .main-content h3 {
+      font-size: 1.6em;
+    }
+
+    header {
+        padding: 8px 10px !important;
+    }
+
+    .menu a {
+        font-size: 0.85em;
+        padding: 6px;
+    }
+
+    .logo {
+        font-size: 1.2em !important;
+    }
+
+    section {
+        padding: 60px 15px;
+    }
+}
+@media (max-width: 360px) {
+    body {
+        font-size: 13px;
+    }
+    
+    .logo {
+        font-size: 1.1em !important;
+    }
 }
