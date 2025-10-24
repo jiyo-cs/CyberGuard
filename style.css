@@ -586,45 +586,65 @@ section {
     }
 }
 
-@media (max-width: 641px) {
+@media (max-width: 1023px) {
     header {
-        padding: 8px 10px !important;
+        padding: 12px 20px !important;
+        flex-direction: column;
+        gap: 15px;
+        text-align: center;
     }
-    
+
+    .menu {
+        flex-direction: column;
+        gap: 10px;
+        width: 100%;
+        display: none; /* إخفاء القائمة */
+    }
+
+    .menu.active {
+        display: flex; /* إظهار القائمة عند النقر */
+    }
+
+    .menu-item {
+        width: 100%;
+        text-align: center;
+    }
+
+    .dropdown-menu {
+        position: static;
+        width: 100%;
+        box-shadow: none;
+        display: none;
+    }
+
+    .dropdown-menu.active {
+        display: block;
+    }
+
     .logo {
-        font-size: 1.1em !important;
+        font-size: 1.5em !important;
+        order: -1;
     }
-    
+
     .schedule-call1 {
-        font-size: 0.7em !important;
-        padding: 6px 10px !important;
+        position: static;
+        order: -1;
+        margin-bottom: 10px;
     }
 }
 
 @media (max-width: 641px) {
-    body {
-      font-size: 14px;
-    }
-
-    .main-content h2 {
-      font-size: 1.2em;
-    }
-
-    .main-content h3 {
-      font-size: 1.6em;
-    }
-
     header {
-        padding: 8px 10px !important;
+        padding: 10px 15px !important;
     }
 
     .menu a {
-        font-size: 0.85em;
-        padding: 6px;
+        font-size: 0.9em;
+        padding: 8px;
     }
 
     .logo {
-        font-size: 1.2em !important;
+        font-size: 1.3em !important;
     }
 
     section {
